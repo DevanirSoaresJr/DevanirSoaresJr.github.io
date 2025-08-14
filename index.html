@@ -1,77 +1,170 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Elite Python + AI Portfolio</title>
+  <title>Devanir Soares Jr — Python • AI/ML • MLOps</title>
+  <meta name="description" content="Python + AI/ML portfolio focused on UK/EMEA market: backend APIs with FastAPI, Azure deployments, MLOps foundations, and support-to-engineering transition."/>
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f8f9fa; color: #333; }
-    header { background: #2c3e50; color: white; padding: 30px 20px; text-align: center; }
-    nav { background: #34495e; padding: 10px; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    section { padding: 40px 20px; max-width: 1000px; margin: auto; background: white; margin-top: 20px; border-radius: 10px; box-shadow: 0 0 10px #ccc; }
-    h2 { color: #2c3e50; margin-top: 0; }
-    footer { text-align: center; padding: 20px; font-size: 0.9em; color: #666; }
-    .button { background: #2980b9; color: white; padding: 10px 20px; border: none; text-decoration: none; border-radius: 5px; }
+    :root{
+      --bg:#282a36;
+      --card:#1e1f29;
+      --muted:#6272a4;
+      --pink:#ff79c6;
+      --cyan:#8be9fd;
+      --green:#50fa7b;
+      --orange:#ffb86c;
+      --purple:#bd93f9;
+      --yellow:#f1fa8c;
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;
+      margin:0;
+      background:var(--bg);
+      color:#f8f8f2;
+    }
+    a{color:var(--cyan);text-decoration:none}
+    header{
+      padding:46px 20px 24px;
+      text-align:center;
+      border-bottom:1px solid var(--muted);
+      background:var(--card);
+    }
+    header h1{margin:0;font-size:1.9rem;color:var(--pink)}
+    header p{margin:.35rem 0 0;color:var(--muted)}
+    nav{
+      display:flex;gap:12px;justify-content:center;flex-wrap:wrap;
+      padding:12px 16px;
+      border-bottom:1px solid var(--muted);
+      background:var(--card);
+    }
+    nav a{
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid var(--muted);
+      font-weight:600;
+      color:var(--cyan);
+    }
+    .container{max-width:1080px;margin:0 auto;padding:22px}
+    section{
+      background:var(--card);
+      border:1px solid var(--muted);
+      border-radius:16px;
+      padding:22px;
+      margin:18px 0;
+    }
+    h2{margin:0 0 10px;font-size:1.3rem;color:var(--purple)}
+    .sub{color:var(--muted);margin:0 0 14px}
+    .grid{display:grid;gap:16px}
+    @media(min-width:860px){
+      .grid.cols-2{grid-template-columns:1fr 1fr}
+      .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    }
+    .card{
+      background:var(--bg);
+      border:1px solid var(--muted);
+      border-radius:14px;
+      padding:16px;
+      transition:transform 0.2s ease;
+    }
+    .card:hover{transform:translateY(-5px)}
+    .card h3{margin:.1rem 0 .5rem;font-size:1.05rem;color:var(--yellow)}
+    .pill{
+      display:inline-block;
+      padding:4px 8px;
+      border-radius:999px;
+      font-size:.8rem;
+      border:1px solid var(--muted);
+      margin:2px 6px 0 0;
+      color:var(--orange);
+    }
+    .btn{
+      display:inline-block;
+      background:var(--pink);
+      color:var(--bg);
+      border:none;
+      padding:10px 14px;
+      border-radius:10px;
+      font-weight:700;
+    }
+    .btn.ghost{
+      background:transparent;
+      border:1px solid var(--muted);
+      color:var(--cyan);
+    }
+    footer{
+      color:var(--muted);
+      text-align:center;
+      padding:30px 12px;
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Elite Python + AI Career Blueprint</h1>
-  <p>Zero-to-Hero Roadmap for ML, MLOps, DevOps, and Clean Python</p>
+  <h1>Devanir Soares Jr — Python • AI/ML • MLOps</h1>
+  <p>Tech Support & App Support → Junior AI/ML Engineer · Python Backend (AI) · Junior MLOps</p>
 </header>
 
 <nav>
-  <a href="#summary">Summary</a>
-  <a href="#roadmap">Roadmap</a>
+  <a href="#roles">Roles</a>
+  <a href="#skills">Skills</a>
   <a href="#projects">Projects</a>
-  <a href="#resources">Resources</a>
-  <a href="#download">Download</a>
+  <a href="#cv">My CV</a>
 </nav>
 
-<section id="summary">
-  <h2>01 – Executive Summary</h2>
-  <p>Mission: Become a top-tier Python + AI developer by mastering programming, ML, cloud, and MLOps.</p>
-  <p>12–16 week timeline covering Python fundamentals, applied machine learning, MLOps deployment, and portfolio building.</p>
-</section>
+<main class="container">
 
-<section id="roadmap">
-  <h2>02 – Career Roadmap</h2>
-  <ul>
-    <li>Phase 1: Python Core + PCAP</li>
-    <li>Phase 2: Math for ML & DL</li>
-    <li>Phase 3: MLOps Pipelines + Deployment</li>
-    <li>Phase 4: Portfolio + Certification + Interview Prep</li>
-  </ul>
-</section>
+  <section id="roles">
+    <h2>Target Roles</h2>
+    <div class="sub">UK/EMEA remote, hybrid, or on-site positions.</div>
+    <p>• Junior AI/ML Engineer<br>
+       • Python Backend Developer (AI-focused)<br>
+       • MLOps Engineer (Junior)</p>
+  </section>
 
-<section id="projects">
-  <h2>07 – Portfolio Projects</h2>
-  <ul>
-    <li><strong>taskninja-cli</strong>: Task manager CLI (Python)</li>
-    <li><strong>ml-predictor</strong>: ML REST API with FastAPI</li>
-    <li><strong>llm-chatbot</strong>: OpenAI + LangChain assistant</li>
-    <li><strong>dp-pathfinder</strong>: DP visualizer with Tkinter</li>
-    <li><strong>vision-classifier</strong>: Streamlit image classifier</li>
-  </ul>
-</section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python (OOP, FastAPI, Pandas, SQL)</li>
+      <li>ML: scikit-learn, Azure Cognitive Services</li>
+      <li>Cloud: Azure App Service, Azure Functions</li>
+      <li>DevOps/MLOps: Docker, GitHub Actions, MLflow</li>
+    </ul>
+  </section>
 
-<section id="resources">
-  <h2>08 – Learning Resources</h2>
-  <p>Certifications: PCAP, PCPP1, AI-900, AZ-204, AI-102</p>
-  <p>Flashcards: Anki + Notion board + spaced repetition</p>
-  <p>Daily log, LeetCode tracker, Markdown cheatsheet</p>
-</section>
+  <section id="projects">
+    <h2>Portfolio Projects</h2>
+    <div class="grid cols-2">
+      <a class="card" href="projects/sentiment-analysis.html">
+        <h3>Sentiment Analysis API</h3>
+        <p>FastAPI + scikit-learn model deployed with Azure Functions.</p>
+      </a>
+      <a class="card" href="projects/house-price.html">
+        <h3>House Price Prediction API</h3>
+        <p>FastAPI + scikit-learn regression served on Azure App Service.</p>
+      </a>
+      <a class="card" href="projects/data-pipeline.html">
+        <h3>Data Pipeline Automation</h3>
+        <p>Python CLI for CSV ingestion, cleaning, and Azure Blob upload.</p>
+      </a>
+      <a class="card" href="projects/mlops-demo.html">
+        <h3>MLOps Demo</h3>
+        <p>Dockerized ML API with CI/CD and MLflow experiment tracking.</p>
+      </a>
+    </div>
+  </section>
 
-<section id="download">
-  <h2>Download the Full PDF</h2>
-  <a href="Elite_Python_AI_Career_Blueprint_v3.pdf" class="button" download>📥 Download Roadmap PDF</a>
-</section>
+  <section id="cv">
+    <h2>Download My CV</h2>
+    <p><a href="Devanir_Soares_Jr_CV.pdf" class="btn" download>📥 Download CV</a></p>
+  </section>
+
+</main>
 
 <footer>
-  Built with ❤️ and Python | Hosted on GitHub Pages
+  Built with clean HTML/CSS · Dracula Theme · © 2025 Devanir Soares Jr
 </footer>
 
 </body>
